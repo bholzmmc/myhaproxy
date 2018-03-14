@@ -12,7 +12,7 @@ all_web_nodes.each do |web_node|
     'port' => 80,
     'ssl_port' => 80
   }
-  members.push(members)
+  members.push(member)
 end
 
 node.default['haproxy']['members'] = members
